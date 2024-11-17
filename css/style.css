@@ -1,0 +1,48 @@
+body{
+    font-family: 'Poppins', sans-serif; 
+    background-color: black;
+    color: white;
+
+}
+.main-header{
+    padding: 10px;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: space-between;
+}  
+#img-home-a{
+    margin-top: -10%;
+}
+.img-home{
+   
+    width: 150%; 
+
+    filter:grayscale(60%) opacity(40%);
+}
+#follow{
+    margin: 10%;
+    display: flex;
+    justify-content:space-around;
+}
+#follow img{
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+#home{
+    display: flex;
+
+.text-home{
+    margin: 100px ;
+    font-size: 20px;
+}
+    
+}
+#profile{
+    background-color: rgb(48, 48, 48);
+}
