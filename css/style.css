@@ -1,35 +1,44 @@
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: black;
     color: white;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* ======================= Header ======================================= */
-.main-header {
-    top: 0px;
-    position: sticky;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #33333300;
+    padding: 5px;
+    text-align: center;
+    z-index: 1000;
+    padding-top: 20px;
 }
 
-.nav-menu {
-    display: flex;
-
-     
-       
-}
-
-.nav-menu a {
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.363);
-    font-size: 20px;
-    color: rgb(69, 69, 69);
-    padding: 1px 20px;
-    margin: 5px;
+nav a {
+    color: #fff;
     text-decoration: none;
+    margin:  30px;
+    background-color: #00000029;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+section {
+    height: 100vh;
+    padding: 20px;
 }
 
 nav > a:hover {
@@ -40,27 +49,26 @@ nav > a:hover {
     transition: transform 0.3s ease-in-out;
 }
 /* ==================== Home Section ===============================*/
-#home {
-    padding: 100px;
-      
+#home { 
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.108), rgb(0, 0, 0)),
+     url('https://t3.ftcdn.net/jpg/06/24/52/34/360_F_624523450_NbFfAibNsbxFDjGKueOukV4ijNGFIuQ1.jpg');
+    background-size: cover;
+    padding: 100px;    
 }
 .text-home{
     align-items: center;
 }
-.text-home h4{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: -200px;
-}
+
 
 .text-home h1 {
 
-    font-family: "Rubik Glitch", system-ui;
     font-weight: 1;
     font-style: normal;
     text-align: center;
-    letter-spacing:4px;
-    font-size: 170px;
+    letter-spacing:5px;
+    font-size: 100px;
+    margin-bottom: 30px;
+
 
 }
 .text-home h1:hover {
@@ -68,9 +76,7 @@ nav > a:hover {
 }
 .text-home p {
     text-align: center;
-    font-size: 40px;
-    margin-top: -200px;
-    margin-left: 10px;
+    font-size: 20px;
     letter-spacing:10px;
     font-family:fantasy ;
 }
@@ -95,29 +101,29 @@ nav > a:hover {
 
 /* ================ Profile Section =============== */
 #profile {
-
+    background-size: cover;
+    background-image:linear-gradient(to top,rgba(0, 235, 252), rgba(0, 0, 0, 0.124), rgb(1, 1, 1)),
+     url('https://img.freepik.com/premium-photo/mountain-range-with-mountains-background_14117-7024.jpg');
     text-align: center;
-    padding: 100px;
 }
 
 #profile h1 {
 
-    background-image: s;
     padding: 100px;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-/* =============== Footer============================= */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: white;
-    margin-top: 50px;
+#profile h2 {
+    font-size: 20px;
 }
+
 
 /* ================ Project Section =============== */
 #Project {
+    background-image: linear-gradient(to bottom, rgb(0, 235, 252), rgba(0, 0, 0, 0.124), rgb(1, 1, 1)), 
+    url('https://images4.alphacoders.com/133/thumb-1920-1338265.png');
+    background-size: cover;
     font-size: 30px;
     text-align: center;
     padding: 100px;
@@ -131,16 +137,14 @@ footer {
 
 
 
-/* Atur container */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    perspective: 1000px; /* Perspektif untuk efek 3D */
+    perspective: 1000px; 
   }
   
-  /* Atur kartu */
   .card {
     width: 400px;
     height: 400px;
@@ -151,57 +155,59 @@ footer {
     cursor: pointer;
   }
   
-  /* Sisi depan dan belakang */
   .card-front, .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Sembunyikan sisi belakang saat tidak terlihat */
+    backface-visibility: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Sisi depan */
   .card-front {
-    border-color: bisque;
-    border: 20px;
+    border-color: rgb(255, 255, 255);
+    border: 50px;
     
    
   }
   
-  /* Sisi belakang */
   .card-back {
-    font-family: fantasy;
-    color: rgb(87, 87, 87);
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210828/pngtree-frosted-glass-texture-frosted-white-gray-background-image_771741.jpg'); 
-    opacity: 0.5;
-    transform: rotateY(180deg); 
+    color: rgb(255, 255, 255); 
+    background-color: rgba(0, 0, 0, 0.463);
+    transform: rotateY(180deg);
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 10px;
-  }
+    border-radius: 20px;
+}
+
   
   .card.flipped {
     transform: rotateY(180deg);
 }
 
 .card-front img {
-    width: 600px; /* Sesuaikan lebar gambar dengan lebar kartu */
-    height: auto; /* Pastikan proporsi gambar tetap */
-    border-radius: 10px; /* Opsional: tambahkan sudut melengkung */
-    object-fit: cover; /* Memastikan gambar terisi dengan baik dalam kartu */
+    width: 600px;
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover; 
   }
   
   
-
+/* =============== Footer============================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
 
 /* ================ tambahan Section =============== */
 .animated-text {
-    background: linear-gradient(90deg, rgba(6, 255, 222, 0.500), rgb(255, 0, 234, 0.500), rgb(6, 255, 222, 0.500)); 
+    background: linear-gradient(90deg, rgb(0, 100, 87), rgb(119, 0, 111), rgb(0, 100, 87)); 
+
     background-size: 200% 100%; 
     -webkit-background-clip: text;
     background-clip: text;
@@ -211,8 +217,9 @@ footer {
 }
 
 .animated-text:hover{
+    background: linear-gradient(90deg, rgba(6, 255, 222, 0.715), rgba(255, 0, 234, 0.764), rgba(6, 255, 222, 0.715)); 
+
     animation: gradient-animation s linear infinite; 
-    background: linear-gradient(90deg, rgb(6, 255, 222), rgb(255, 0, 234), rgb(6, 255, 222)); 
     background-size: 200% 100%; 
     -webkit-background-clip: text;
     background-clip: text;
@@ -261,9 +268,51 @@ footer {
   
   
 
-@media (max-width: 768px) {
-    #home {
-        flex-direction: column;
-        text-align: center;
+  @media (min-width: 400px) and (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    .text-home h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-front img {
+        border-radius: 10px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .text-home h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    .card {
+        width: 350px;
+        height: 350px;
+    }
+}
+
