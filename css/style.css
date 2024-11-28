@@ -267,8 +267,10 @@ footer {
   
   
 
-  @media (min-width: 0px) and (max-width: 425px){
-    body{}
+  @media  (max-width: 425px){
+    body{
+        width: 425px ;
+    }
     #loading-screen h1 {
         font-size: 20px;
     }
@@ -276,8 +278,8 @@ footer {
     
     nav a {
         text-align: start;
-        margin: 1px;
-        font-size: 5px;
+        margin: 4px;
+        font-size: 10px;
     }
 
     section {
@@ -287,7 +289,7 @@ footer {
 
 
     .text-home h1 {
-        font-size: 25px;
+        font-size: 40px;
         letter-spacing: 2px;
         margin-bottom: auto;
         margin-right: -30px;
@@ -298,14 +300,14 @@ footer {
 
     .text-home p{
 
-        font-size: 5px;
+        font-size: 9px;
         letter-spacing:4px;
 
     }
 
     #g-h img{
         padding: 3%;
-        height: 10px;
+        height: 20px;
     }
 
     .card-container {
@@ -313,18 +315,18 @@ footer {
     }
     #profile h1 {
         padding: 10%;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #profile h2 {
         margin-top: -50px;
         padding-top: 10px;
         padding: 50px;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     #Project h1{
-        font-size: 20px ;
+        font-size: 30px ;
     }
     #Project p{
         font-size: 10px ;
@@ -336,7 +338,7 @@ footer {
     }
 
     .card-front img {
-        width: 200px;
+        width: 300px;
     }
     .card-back p{
         font-size: 4px;
